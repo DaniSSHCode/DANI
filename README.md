@@ -1,2 +1,1 @@
-# about
-My Website
+# https://danisshcode.github.io/about/
