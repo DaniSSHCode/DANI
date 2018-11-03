@@ -1,2 +1,43 @@
-<h1>Hi</h1>
-<p>My name is Dani</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DANI</title>
+    <style>
+    body{
+        margin: 0%;
+    }</style>
+</head>
+
+<body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            //do work
+            function embed(src) {
+                var iframe = document.createElement('iframe');
+                document.body.appendChild(iframe);
+
+                iframe.src = src;
+                iframe.width = "100%";
+                iframe.height = "100%";
+                iframe.setAttribute("frameborder", "0");
+                iframe.scrolling = "yes";
+
+            };
+            if (window.innerWidth <= 480) {
+                // is mobile.. 
+                embed("mobile/index.html");
+            } else {
+                
+                //is computer
+                embed("computer/index.html");
+            }
+        });
+    </script>
+</body>
+
+</html>
