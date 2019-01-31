@@ -1,0 +1,70 @@
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Carlos Sandoval</title>
+    <link href="assets/images/top.png" rel="shortcut icon" type="image/png">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <div class="box" id="box">
+
+        <img class="photo" src="assets/images/me.png"><br>
+
+        <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round"></a>
+        <a href="#" target="" onClick="openProyectos();"><img src="assets/images/proyectos-texto.png" class="round-rect"></a>
+        <a href="https://www.linkedin.com/in/carlos-sandoval-guevara-74b2b979/" target="_blank"><img src="assets/images/linkedin.png"
+                class="round"></a>
+        <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round"></a>
+
+        <div class="col  text-content" style="" id="second-group">
+            <p class="title">Carlos Sandoval</p>
+            <br>
+            <p class=" text-content-normal ">
+                <p class=" text-content-important ">Soy Ingeniero Eléctrico de la Universidad de Los Andes con amplia experiencia
+                    en el sector de Telecomunicaciones y Energía, adquirida en desarrollo de contratos y prestación de servicios
+                    para importantes empresas del estado y del sector privado. Certificado PMP, ITIL/Foundations, ITIL/RCV,
+                    ITIL/PPO. Diplomado en Gerencia Técnica de Servicios de Telecomunicaciones.</p>
+            </p><br>
+            <p class=" text-content-normal ">Experiencia específica en la implementación de proyectos y prestación de servicios
+                de Telecomunicaciones, desarrollando labores de coordinación y administración de recursos humanos y físicos,
+                planeación de actividades, reportes de ANS/TBG, elaboración de ofertas, gestión de proveedores, diseños e
+                interventoría entre otras. Como soporte técnico he realizado labores de implementación, operación y mantenimiento
+                en áreas como sistemas de microondas, satelital, wireless, comunicaciones móviles, cableado y energía.</p><br><br>
+            <p class=" text-content-normal ">Excelente grado de
+                <p class=" text-content-important ">responsabilidad</p> y
+                <p class=" text-content-important ">compromiso</p>, disposición para trabajar en equipo, adaptación a nuevos
+                procesos y metodologías, orientación a resultados y servicio al cliente.
+            </p><br>
+            <p class=" text-content-important ">Gmail: </p>
+            <p class=" text-content-normal ">c.sandovalguevara@gmail.com</p>
+        </div>
+        <br>
+    </div>
+    <br><br><br><br>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function openContacto() {
+            
+            fetch('contacto.html').then(function (response) {
+                return response.text()
+            }).then(function (text) {
+                document.getElementById('second-group').innerHTML = request.response;
+            });
+        };
+    </script>
+</body>
+
+</html>
