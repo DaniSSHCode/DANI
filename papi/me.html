@@ -19,20 +19,26 @@
 
         <img class="photo" src="assets/images/me.png"><br>
 
-        <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round"></a>
+        <a href="#" target="" onClick="openHome();"><img src="assets/images/home.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Quién Soy?"></a>
+        <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Contactarme"></a>
+        <a href="#" target="" onClick="openEducacion();"><img src="assets/images/book.jpg" class="round tooltipped" data-position="bottom"
+                data-tooltip="Educacion"></a>
         <a href="#" target="" onClick="openProyectos();"><img src="assets/images/proyectos-texto.png" class="round-rect"></a>
         <a href="https://www.linkedin.com/in/carlos-sandoval-guevara-74b2b979/" target="_blank"><img src="assets/images/linkedin.png"
-                class="round"></a>
-        <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round"></a>
-
+                class="round tooltipped" data-position="bottom" data-tooltip="LinkedIn "></a>
+        <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Curriculum vitae"></a>
+        <p class="title">Carlos Sandoval</p>
         <div class="col  text-content" style="" id="second-group">
-            <p class="title">Carlos Sandoval</p>
+
             <br>
             <p class=" text-content-normal ">
-                <p class=" text-content-important ">Soy Ingeniero Eléctrico de la Universidad de Los Andes con amplia experiencia en el sector de Telecomunicaciones
-                    y Energía, adquirida en desarrollo de contratos y prestación de servicios para importantes empresas del
-                    estado y del sector privado. Certificado PMP, ITIL/Foundations, ITIL/RCV, ITIL/PPO. Diplomado en Gerencia
-                    Técnica de Servicios de Telecomunicaciones.</p>
+                <p class=" text-content-important ">Soy Ingeniero Eléctrico de la Universidad de Los Andes con amplia experiencia
+                    en el sector de Telecomunicaciones y Energía, adquirida en desarrollo de contratos y prestación de servicios
+                    para importantes empresas del estado y del sector privado. Certificado PMP, ITIL/Foundations, ITIL/RCV,
+                    ITIL/PPO. Diplomado en Gerencia Técnica de Servicios de Telecomunicaciones.</p>
             </p><br>
             <p class=" text-content-normal ">Experiencia específica en la implementación de proyectos y prestación de servicios
                 de Telecomunicaciones, desarrollando labores de coordinación y administración de recursos humanos y físicos,
@@ -41,8 +47,8 @@
                 en áreas como sistemas de microondas, satelital, wireless, comunicaciones móviles, cableado y energía.</p><br><br>
             <p class=" text-content-normal ">Excelente grado de
                 <p class=" text-content-important ">responsabilidad</p> y
-                <p class=" text-content-important ">compromiso</p>, disposición para trabajar en equipo, adaptación a nuevos procesos y metodologías, orientación
-                a resultados y servicio al cliente.
+                <p class=" text-content-important ">compromiso</p>, disposición para trabajar en equipo, adaptación a nuevos
+                procesos y metodologías, orientación a resultados y servicio al cliente.
             </p><br>
             <p class=" text-content-important ">Gmail: </p>
             <p class=" text-content-normal ">c.sandovalguevara@gmail.com</p>
@@ -57,13 +63,20 @@
     <script src="script.js"></script>
     <script>
         function openContacto() {
-            var request = new XMLHttpRequest();
-            request.open('GET', 'contacto.html');
-            console.log(request.response)
-            document.getElementById('second-group').innerHTML = request.response;
-                
+            window.location.replace("contacto.html");
         };
+        function openProyectos() {
+            window.location.replace("proyectos.html");
+        };
+        function openEducacion() {
+            window.location.replace("educacion.html");
+        };
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+
     </script>
+
 </body>
 
 </html>

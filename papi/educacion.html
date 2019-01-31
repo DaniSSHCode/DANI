@@ -1,0 +1,125 @@
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Carlos Sandoval</title>
+    <link href="assets/images/top.png" rel="shortcut icon" type="image/png">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <div class="box" id="box">
+
+        <img class="photo" src="assets/images/me.png"><br>
+
+        <a href="#" target="" onClick="openHome();"><img src="assets/images/home.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Quién Soy?"></a>
+        <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Contactarme"></a>
+        <a href="#" target="" onClick="openEducacion();"><img src="assets/images/book.jpg" class="round tooltipped" data-position="bottom"
+                data-tooltip="Educacion"></a>
+        <a href="#" target="" onClick="openProyectos();"><img src="assets/images/proyectos-texto.png" class="round-rect"></a>
+        <a href="https://www.linkedin.com/in/carlos-sandoval-guevara-74b2b979/" target="_blank"><img src="assets/images/linkedin.png"
+                class="round tooltipped" data-position="bottom" data-tooltip="LinkedIn "></a>
+        <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Curriculum vitae"></a>
+        <p class="title">Carlos Sandoval</p>
+        <div class="col  text-content" style="" id="second-group">
+            <br>
+
+            <p class="text-content-important">Formacion Universitaria</p>
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/Andes_U.jpg" alt="" class="circle">
+                    <span class="title">1987 - Matrícula CN205-0182 ACIEM</span>
+                    <p>Ingeniero Eléctrico - Universidad de Los Andes<br>
+                    </p>
+
+                </li>
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/santo-tomas.png" alt="" class="circle">
+                    <span class="title">Univ. Santo Tomás – 2000</span>
+                    <p>Diplomado Gerencia Técnica en Servicios de Telecomunicaciones
+                    </p>
+
+                </li>
+
+            </ul>
+
+
+            <br>
+
+            <p class="text-content-important">Certificaciones de Industria</p>
+            <ul class="collection">
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/blue.jpg" alt="" class="circle">
+                    <span class="title">2014</span>
+                    <p>Certificación PMP (Project Management Professional - PMI)
+                    </p>
+
+                </li>
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/yellow.jpeg" alt="" class="circle">
+                    <span class="title">2010</span>
+                    <p>Certificación ITIL FOUNDATION V.3.0
+                    </p>
+
+                </li>
+
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/green.gif" alt="" class="circle">
+                    <span class="title">2010</span>
+                    <p>Certificación ITIL V.3.0 PPO - Planning, Protection &amp; Optimization
+                    </p>
+
+                </li>
+                <li class="collection-item avatar">
+                    <img src="assets/estudios/purple.jpg" alt="" class="circle">
+                    <span class="title">2011</span>
+                    <p>Certificación ITIL V.3.0 RCV - Release, Control &amp; Validation
+                    </p>
+
+                </li>
+            </ul>
+            <br>
+
+            <p class="text-content-important">Otros cursos de formación:</p>
+            <p class="text-content-normal"> Participación en cursos y seminarios de formación técnica y complementaria: Sistemas
+                de Transmisión Microondas, Fibra Óptica, Comunicaciones Móviles, Redes de Datos, Sistemas de Tierra, Trabajo
+                en Alturas, Primeros Auxilios, Técnicas de Negociación, entre otros.</p><br><br>
+            <p class="text-content-important">Nivel de Inglés – </p>
+            <p class="text-content-normal">Lectura y Escritura 90% / Comprensión verbal y conversación 70%</p>
+        </div>
+        <br>
+    </div>
+    <br><br><br><br>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        function openHome() {
+            window.location.replace("me.html");
+        };
+        function openProyectos() {
+            window.location.replace("proyectos.html");
+        };
+        function openContacto() {
+            window.location.replace("contacto.html");
+        };
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>
