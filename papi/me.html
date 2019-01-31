@@ -29,10 +29,10 @@
             <p class="title">Carlos Sandoval</p>
             <br>
             <p class=" text-content-normal ">
-                <p class=" text-content-important ">Soy Ingeniero Eléctrico de la Universidad de Los Andes con amplia experiencia
-                    en el sector de Telecomunicaciones y Energía, adquirida en desarrollo de contratos y prestación de servicios
-                    para importantes empresas del estado y del sector privado. Certificado PMP, ITIL/Foundations, ITIL/RCV,
-                    ITIL/PPO. Diplomado en Gerencia Técnica de Servicios de Telecomunicaciones.</p>
+                <p class=" text-content-important ">Soy Ingeniero Eléctrico de la Universidad de Los Andes con amplia experiencia en el sector de Telecomunicaciones
+                    y Energía, adquirida en desarrollo de contratos y prestación de servicios para importantes empresas del
+                    estado y del sector privado. Certificado PMP, ITIL/Foundations, ITIL/RCV, ITIL/PPO. Diplomado en Gerencia
+                    Técnica de Servicios de Telecomunicaciones.</p>
             </p><br>
             <p class=" text-content-normal ">Experiencia específica en la implementación de proyectos y prestación de servicios
                 de Telecomunicaciones, desarrollando labores de coordinación y administración de recursos humanos y físicos,
@@ -41,8 +41,8 @@
                 en áreas como sistemas de microondas, satelital, wireless, comunicaciones móviles, cableado y energía.</p><br><br>
             <p class=" text-content-normal ">Excelente grado de
                 <p class=" text-content-important ">responsabilidad</p> y
-                <p class=" text-content-important ">compromiso</p>, disposición para trabajar en equipo, adaptación a nuevos
-                procesos y metodologías, orientación a resultados y servicio al cliente.
+                <p class=" text-content-important ">compromiso</p>, disposición para trabajar en equipo, adaptación a nuevos procesos y metodologías, orientación
+                a resultados y servicio al cliente.
             </p><br>
             <p class=" text-content-important ">Gmail: </p>
             <p class=" text-content-normal ">c.sandovalguevara@gmail.com</p>
@@ -57,12 +57,11 @@
     <script src="script.js"></script>
     <script>
         function openContacto() {
-            
-            fetch('contacto.html').then(function (response) {
-                return response.text()
-            }).then(function (text) {
-                document.getElementById('second-group').innerHTML = request.response;
-            });
+            var request = new XMLHttpRequest();
+            request.open('GET', 'contacto.html');
+            console.log(request.response)
+            document.getElementById('second-group').innerHTML = request.response;
+                
         };
     </script>
 </body>
