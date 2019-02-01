@@ -36,7 +36,7 @@
                 <strong>Gmail: </strong>c.sandovalguevara@gmail.com <br>
                 <strong>Ubicacion: </strong>Bogotá - Carrera 57 # 134 -20 / T. 2 - AP 402
             </p>
-            <div class="carousel">
+            <div class="carousel" id="carousel">
                 <a class="carousel-item" href="#one!"><img src="assets/photos/0.JPG"></a>
                 <a class="carousel-item" href="#two!"><img src="assets/photos/1.JPG"></a>
                 <a class="carousel-item" href="#three!"><img src="assets/photos/2.JPG"></a>
@@ -69,21 +69,19 @@
     </script>
     <script>
         $(document).ready(function () {
-            
+
 
 
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 // is mobile..
-                var carousel = document.querySelectorAll(".carousel");
-                for (var i = 0; i < carousel.length; i++) {
-                    carousel[i].style.height = '200px';
-                    carousel[i].style.width = '400px';
+                var carousel = document.getElementById('carousel');
+                
+                for (i = 0; i < carousel.getElementsByTagName('img').length; i++) { 
+                    $('#second-group').append( '<img class="responsive-img" src="'+ carousel.getElementsByTagName('img')[i].src+'">');
                 };
-                var carousel = document.querySelectorAll(".carousel-item");
-                for (var i = 0; i < carousel.length; i++) {
-                    carousel[i].style.height = '200px';
-                    carousel[i].style.width = '400px';
-                };
+
+
+                $('#carousel').remove();
             }
             $('.carousel').carousel();
             $('.tooltipped').tooltip();
