@@ -55,7 +55,7 @@ body{
 
 .text-content{
     margin-top: 0px;
-    margin-left: 0%;
+    margin-left: 20%;
     margin-right: 20%;
     text-align: left;
     font-size: 18px;
@@ -133,3 +133,28 @@ body{
     width: auto;
     height: 80px;
 }
+
+
+.proyectos{
+
+    height: 40px;
+    width: 100px;
+    border-radius: 20%;
+    margin: 5px;
+    background-color: cornflowerblue;
+    text-align: center;
+    
+    color: aliceblue;
+    line-height: 40px;
+    padding-top: 20;
+    display:inline-block;
+    align-content: center;
+}
+
+
+#proyectos{
+    position: relative;
+    top: -20;
+    
+}
+
