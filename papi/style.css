@@ -1,6 +1,6 @@
 
 body{
-    /*background-image: url("assets/images/background.png");*/
+    background-image: url("assets/images/background.png");
 }
 
 
@@ -58,7 +58,7 @@ body{
     margin-left: 20%;
     margin-right: 20%;
     text-align: left;
-    font-size: 25px;
+    font-size: 15px;
  
 
 }
