@@ -19,16 +19,16 @@
 
         <img class="photo" src="assets/images/me.png"><br>
         <a href="#" target="" onClick="openHome();"><img src="assets/images/home.png" class="round tooltipped" data-position="bottom"
-            data-tooltip="Quién Soy?"></a>
-    <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round tooltipped" data-position="bottom"
-            data-tooltip="Contactarme"></a>
-    <a href="#" target="" onClick="openEducacion();"><img src="assets/images/book.jpg" class="round tooltipped" data-position="bottom"
-            data-tooltip="Educacion"></a>
-    <a href="#" target="" onClick="openProyectos();"><img src="assets/images/proyectos-texto.png" class="round-rect"></a>
-    <a href="https://www.linkedin.com/in/carlos-sandoval-guevara-74b2b979/" target="_blank"><img src="assets/images/linkedin.png"
-            class="round tooltipped" data-position="bottom" data-tooltip="LinkedIn "></a>
-    <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round tooltipped" data-position="bottom"
-            data-tooltip="Curriculum vitae"></a>
+                data-tooltip="Quién Soy?"></a>
+        <a href="#" target="" onClick="openContacto();"><img src="assets/images/person.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Contactarme"></a>
+        <a href="#" target="" onClick="openEducacion();"><img src="assets/images/book.jpg" class="round tooltipped" data-position="bottom"
+                data-tooltip="Educacion"></a>
+        <a href="#" target="" onClick="openProyectos();"><img src="assets/images/proyectos-texto.png" class="round-rect"></a>
+        <a href="https://www.linkedin.com/in/carlos-sandoval-guevara-74b2b979/" target="_blank"><img src="assets/images/linkedin.png"
+                class="round tooltipped" data-position="bottom" data-tooltip="LinkedIn "></a>
+        <a href="assets/docs/blank.pdf" target="_blank"><img src="assets/images/cv.png" class="round tooltipped" data-position="bottom"
+                data-tooltip="Curriculum vitae"></a>
         <p class="title">Carlos Sandoval</p>
         <div class="col  text-content" style="" id="second-group">
             <p style="text-align:center;" class="text-content-normal-2"> <strong>Teléfono: </strong>479 6505 <br>
@@ -70,26 +70,28 @@
     <script>
         $(document).ready(function () {
             $('.carousel').carousel();
-            if (screen.width <= 480) {
+
+
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                // is mobile..
                 var carousel = document.querySelectorAll(".carousel");
-                for (var i = 0; i < myElements.length; i++) {
-                    myElements[i].style.height = 100;
-                    myElements[i].style.width = 100;
+                for (var i = 0; i < carousel.length; i++) {
+                    carousel[i].style.height = 100;
+                    carousel[i].style.width = 100;
                 };
                 var carousel = document.querySelectorAll(".carousel-item");
-                for (var i = 0; i < myElements.length; i++) {
-                    myElements[i].style.height = 100;
-                    myElements[i].style.width = 100;
+                for (var i = 0; i < carousel.length; i++) {
+                    carousel[i].style.height = 100;
+                    carousel[i].style.width = 100;
                 };
-
-
             }
             $('.tooltipped').tooltip();
         });
-        
+
+
+
 
     </script>
 </body>
 
 </html>
-
