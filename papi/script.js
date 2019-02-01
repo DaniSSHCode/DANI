@@ -5,7 +5,7 @@ $(document).ready(function () {
         // is mobile..
         var sheet = document.createElement('style')
         sheet.innerHTML = `
-        .text-content {margin-top: 0px; margin-left: 0%; margin-right: 0%; text-align: left; font-size: 18px;} 
+        .text-content {margin-top: 0px; margin-left: 5%; margin-right: 5%; text-align: left; font-size: 18px;} 
         .card-image img {
             width: 100px;
             height: auto;
