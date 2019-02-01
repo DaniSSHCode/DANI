@@ -7,8 +7,8 @@ $(document).ready(function () {
         sheet.innerHTML = `
         .text-content {margin-top: 0px; margin-left: 5%; margin-right: 5%; text-align: left; font-size: 18px;} 
         .card-image img {
-            width: 100px;
-            height: auto;
+            width: auto;
+            height: 40px;
         };`
         
         document.body.appendChild(sheet);
