@@ -9,7 +9,16 @@ $(document).ready(function () {
         .card-image img {
             width: auto;
             height: 40px;
-        };`
+        };
+        body{
+            background-image: url("assets/images/7.jpg");
+            background-size: 100% 100%;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: bottom; 
+        }
+        
+        `
         
         document.body.appendChild(sheet);
     }
