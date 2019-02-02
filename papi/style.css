@@ -1,7 +1,7 @@
 
 body{
     background-image: url("assets/images/6.jpg");
-    background-size:cover;
+    background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: bottom; 
@@ -9,10 +9,16 @@ body{
 
 .bg_mobile{
     background-image: url("assets/images/7.jpg");
-    background-size:cover;
+     /* The image used */
+
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom; 
+  background-size: cover;
 }
 
 .box{
